@@ -21,7 +21,7 @@ public class KafkaConfig {
     public ProducerFactory<String, StockUpdateRequestDTO> producerFactory() {
         Map<String, Object> config = new HashMap<>();
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
-                "10.10.122.60:9092");
+                "10.10.126.40:9092");
         config.put(
                 ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
                 StringSerializer.class);
